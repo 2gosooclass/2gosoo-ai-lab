@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOSOO LAB | SHORTS SNIPER Imperial Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="imperial-overlay"></div>
+    <div class="glass-container">
+        <header>
+            <div class="logo">
+                <span class="gold-text">SHORTS</span> <span class="white-text">SNIPER</span>
+                <span class="version-tag">IMPERIAL v1.0</span>
+            </div>
+            <nav class="empire-nav">
+                <div class="nav-item active">FAST CLIPPER</div>
+                <div class="nav-item">EMPIRE ENGINE</div>
+                <div class="nav-item">ARCHIVE</div>
+            </nav>
+            <div class="system-status">
+                <span class="pulse-dot"></span> SYSTEM ONLINE
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <h1 class="glow-text">Capture the Moment,<br><span class="gold-text">Rule the Algorithm.</span></h1>
+                <p class="sub-lead">유튜브 링크 하나로 제국의 쇼츠 군단을 무한 사출하십시오.</p>
+            </section>
+
+            <section class="input-chamber">
+                <div class="input-wrapper">
+                    <input type="text" id="youtube-url" placeholder="https://www.youtube.com/watch?v=...">
+                    <button id="capture-btn" class="imperial-btn">
+                        <span class="btn-content">CAPTURE SHORTS 💎</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+                
+                <!-- EMPIRE ENGINE CONFIG OPTIONS (ALWAYS VISIBLE) -->
+                <div class="empire-options" style="display: flex; gap: 25px; justify-content: center; margin: 20px auto 10px; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 10px; border: 1px solid rgba(255,255,255,0.06); max-width: 600px; box-shadow: inset 0 1px 1px rgba(255,255,255,0.05);">
+                    <label style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 13.5px; cursor: pointer; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                        <input type="checkbox" id="opt-fullscreen" checked style="accent-color: #facc15; width: 18px; height: 18px; cursor: pointer;"> 9:16 전체 화면 📺
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 13.5px; cursor: pointer; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                        <input type="checkbox" id="opt-hidebranding" checked style="accent-color: #facc15; width: 18px; height: 18px; cursor: pointer;"> 하단 문구 삭제 ❌
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 13.5px; cursor: pointer; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                        <input type="checkbox" id="opt-hidetitle" style="accent-color: #facc15; width: 18px; height: 18px; cursor: pointer;"> 상단 타이틀 삭제 🚫
+                    </label>
+                </div>
+                <div class="process-steps">
+                    <div class="step" id="step-1"><span class="s-num">01</span><span class="s-label">FETCHING</span></div>
+                    <div class="step" id="step-2"><span class="s-num">02</span><span class="s-label">ANALYZING</span></div>
+                    <div class="step" id="step-3"><span class="s-num">03</span><span class="s-label">CLIPPING</span></div>
+                    <div class="step" id="step-4"><span class="s-num">04</span><span class="s-label">RENDER</span></div>
+                </div>
+            </section>
+
+            <section id="result-chamber" class="result-chamber" style="display: none;">
+                <div class="chamber-header">
+                    <h2 class="neon-blue">Identified Highlights</h2>
+                    <p>Gemini AI가 영상의 핵심 후킹 구간을 발견했습니다.</p>
+                </div>
+                <div id="clips-grid" class="clips-grid">
+                    <!-- Clips will be injected here -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <span>© 2026 2GOSOO AI LAB - Imperial Automation Division</span>
+                <div class="social-links">
+                    <span>YOUTUBE</span> / <span>INSTAGRAM</span> / <span>WAR-ROOM</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
